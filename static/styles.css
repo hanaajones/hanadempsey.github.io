@@ -1,0 +1,58 @@
+body {
+  background: #f4f0f0;
+  font-family: 'Montserrat', sans-serif;
+  color:#776e6e;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.topMenu p.changeMenu span {
+  transition: 1s;
+}
+
+.topMenu:hover p.changeMenu span {
+  display: none;
+
+}
+
+.topMenu:hover p.changeMenu:after {
+  content: 'HOME';
+}
+
+.navBar span {
+  margin: 10px;
+  padding: 10px;
+  transition: .5s;
+}
+
+.navBar span:hover {
+ color: #b6afaf;
+}
+footer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+footer span{
+  margin: 10px;
+  padding: 10px;
+  transition: .5s;
+}
+
+footer span:hover {
+  color: #b6afaf;
+}
+
