@@ -8,6 +8,12 @@ class App extends React.Component {
 
   }
 
+  handleClick(e) {
+    console.log(e.target)
+    let route = e.target.split('<span>')
+    console.log(route)
+  }
+
 
   render() {
     return (
@@ -16,12 +22,18 @@ class App extends React.Component {
           <h1 className="topMenu">
             <p className="changeMenu"><span>HANA DEMPSEY</span></p>
           </h1>
-          <h2 className="navBar">
+          <h2 className="navBar" onClick={(e) => this.handleClick(e)}>
             <span>WORKS</span><span>PHOTOS</span><span>ABOUT</span><span>AWARDS</span>
           </h2>
+
           <footer>
-            <span>SOCIAL</span>
-            <span>CONTACT</span>
+            <div className="byMe"><div>CREATED BY</div><div>HANA DEMPSEY 2018</div></div>
+            <div className="contact">
+            <span>EMAIL</span>
+            <span>INSTAGRAM</span>
+            <span>LINKEDIN</span>
+            <span>GITHUB</span>
+            </div>
           </footer>
         </div>
       </div>

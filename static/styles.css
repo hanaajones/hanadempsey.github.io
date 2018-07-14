@@ -2,6 +2,7 @@ body {
   background: #f4f0f0;
   font-family: 'Montserrat', sans-serif;
   color:#776e6e;
+  width: 100;
 }
 
 h1 {
@@ -10,12 +11,14 @@ h1 {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
+  letter-spacing: 5px;
 }
 
 h2 {
   text-align: center;
   font-weight: 300;
   font-size: 15px;
+  letter-spacing: 5px;
 }
 
 .topMenu p.changeMenu span {
@@ -31,6 +34,10 @@ h2 {
   content: 'HOME';
 }
 
+.navBar {
+  padding-top: 5px;
+}
+
 .navBar span {
   margin: 10px;
   padding: 10px;
@@ -40,19 +47,41 @@ h2 {
 .navBar span:hover {
  color: #b6afaf;
 }
+
+
 footer {
-  text-align: center;
+  position: absolute;
+  bottom:0;
+  width: 100%;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 12px;
+  display: inline-block;
+  letter-spacing: 5px;
 }
 
-footer span{
+.contact {
+  margin: auto;
+  padding-right: 20px;
+  float:right;
+  display: flex;
+  position: relative;
+}
+
+
+.contact span{
   margin: 10px;
   padding: 10px;
+  padding-top: 20px;
   transition: .5s;
 }
 
-footer span:hover {
+.contact span:hover {
   color: #b6afaf;
+}
+
+.byMe {
+  padding: 20px;
+  font-size: 12px;
+  float: left
 }
 
