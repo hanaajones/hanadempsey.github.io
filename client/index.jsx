@@ -10,7 +10,9 @@ class App extends React.Component {
 
   handleClick(e) {
     console.log(e.target)
-    let route = e.target.split('<span>')
+    let target = e.target
+    console.log(target)
+    let route = target.splice(5,-5)
     console.log(route)
   }
 
@@ -22,8 +24,8 @@ class App extends React.Component {
           <h1 className="topMenu">
             <p className="changeMenu"><span>HANA DEMPSEY</span></p>
           </h1>
-          <h2 className="navBar" onClick={(e) => this.handleClick(e)}>
-            <span>WORKS</span><span>PHOTOS</span><span>ABOUT</span><span>AWARDS</span>
+          <h2 className="navBar" >
+            <span onClick={(e) => this.handleClick(e)}>WORKS</span><span onClick={(e) => this.handleClick(e)}>PHOTOS</span><span onClick={(e) => this.handleClick(e)}>DESIGN</span><span onClick={(e) => this.handleClick(e)}>RESUME</span>
           </h2>
 
           <footer>
